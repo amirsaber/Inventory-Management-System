@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1118.0" style="-fx-background-color: #e8e9ee;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DashboardPackge.DashboardFXMLController">
+   <children>
+      <AnchorPane layoutX="58.0" layoutY="56.0" prefHeight="105.0" prefWidth="250.0">
+         <children>
+            <ImageView fitHeight="96.0" fitWidth="48.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon2/icons8-school-director-48.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_CENTER" layoutX="62.0" layoutY="14.0" prefHeight="26.0" prefWidth="97.0" text="TEACHERS" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="62.0" layoutY="55.0" prefHeight="15.0" prefWidth="64.0" text="count" textAlignment="CENTER">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <Shadow height="0.0" radius="0.0" width="0.0" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

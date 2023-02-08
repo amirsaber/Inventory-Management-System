@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anch" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="184.0" prefWidth="457.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowParent.ShowParentFXMLController">
+   <children>
+      <ImageView fitHeight="107.0" fitWidth="98.0" layoutX="180.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon2/businessman%20(1).png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="17.0" layoutY="153.0" prefHeight="315.0" prefWidth="424.0" spacing="20.0">
+         <children>
+            <HBox prefHeight="29.0" prefWidth="392.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="75.0" text="ID :-">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="id" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="328.0" text="Null">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="29.0" prefWidth="392.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="76.0" text="Name:-">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="fname" layoutY="10.0" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="152.0" text="Null">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="392.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="75.0" text="Phone :-">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="phone1" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="328.0" text="Null">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="88.0" prefHeight="29.0" prefWidth="392.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="76.0" text="Phone :-">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="phone2" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="328.0" text="Null">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="127.0" prefHeight="29.0" prefWidth="392.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="77.0" text="E-mail :-">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="328.0" text="Null">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="166.0" prefHeight="29.0" prefWidth="392.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="78.0" text="Address :-">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="address" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="328.0" text="Null">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="205.0" prefHeight="29.0" prefWidth="392.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="78.0" text="Bith date:-">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="birthdate" layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="328.0" text="Null">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="7.0" prefHeight="29.0" prefWidth="457.0" style="-fx-background-color: #e8e9ee;" AnchorPane.bottomAnchor="449.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="topLabel" minWidth="-Infinity" prefHeight="30.0" prefWidth="364.0" style="-fx-graphic-text-gap: 10;" text="Parent Information">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/drag_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Label>
+            <Label fx:id="close" layoutX="25.0" layoutY="10.0" prefHeight="30.0" prefWidth="34.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/minimize%20(1).png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="close1" layoutX="435.0" layoutY="10.0" prefHeight="27.0" prefWidth="70.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/exit_icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

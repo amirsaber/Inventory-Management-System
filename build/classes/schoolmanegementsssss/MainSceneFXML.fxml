@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="709.0" prefWidth="1366.0" style="-fx-background-color: #3d3e43;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schoolmanegementsssss.MainSceneFXMLController">
+   <children>
+      <AnchorPane fx:id="MainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="709.0" prefWidth="1117.0" style="-fx-background-color: #e8e9ee;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="359.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon2/school.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="backimg" fitHeight="636.0" fitWidth="1117.0" layoutX="91.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/Egypt.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <VBox layoutX="1117.0" prefHeight="520.0" prefWidth="246.0" spacing="10.0" style="-fx-background-color: #3d3e43;">
+         <children>
+            <Label alignment="CENTER" prefHeight="81.0" prefWidth="282.0" style="-fx-background-color: #383a3c; -fx-border-width: 0.5; -fx-border-color: white;" text="Admin Panel" textAlignment="CENTER" textFill="#89aeff">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="SubjectsButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="170.0" mnemonicParsing="false" onAction="#subjects" prefHeight="39.0" prefWidth="245.0" style="-fx-graphic-text-gap: 40;" stylesheets="@../icon/dark-theme%20-%20Copy.css" text="المخازن                             ">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/warehouse.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="TeachersButtom" alignment="TOP_LEFT" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" onAction="#teachers" prefHeight="26.0" prefWidth="245.0" style="-fx-graphic-text-gap: 40;" stylesheets="@../icon/dark-theme%20-%20Copy.css" text="الأصناف                           ">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="StudentButton" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#student" prefHeight="40.0" prefWidth="245.0" style="-fx-graphic-text-gap: 40; -fx-font-size: 16;" styleClass="-fx-font-size" stylesheets="@../icon/dark-theme%20-%20Copy.css" text="اضافه عهد و مشتروات   ">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/shipping.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ParentsButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="170.0" mnemonicParsing="false" onAction="#parents" prefHeight="32.0" prefWidth="245.0" style="-fx-graphic-text-gap: 40;" stylesheets="@../icon/dark-theme%20-%20Copy.css" text="عمليات الصرف                  ">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/transfer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="ResuktsButton" alignment="TOP_LEFT" layoutX="10.0" layoutY="239.0" mnemonicParsing="false" onAction="#cal" opacity="0.0" prefHeight="14.0" prefWidth="245.0" style="-fx-graphic-text-gap: 40;" stylesheets="@../icon/dark-theme%20-%20Copy.css" text="Results">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/test.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="Dashboardbutton" alignment="TOP_LEFT" layoutX="10.0" layoutY="101.0" mnemonicParsing="false" opacity="0.0" prefHeight="20.0" prefWidth="245.0" style="-fx-graphic-text-gap: 40;" stylesheets="@../icon/dark-theme%20-%20Copy.css" text="Dashboard">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/online-marketing.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="1220.0" layoutY="635.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon2/icons8-shutdown-48.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="1251.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ShowChildrenPackage.ShowChildernFXMLController">
+   <children>
+      <ScrollPane prefHeight="633.0" prefWidth="1251.0">
+         <content>
+            <AnchorPane id="AnchorPane" fx:id="anch" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="621.0" prefWidth="2068.0" style="-fx-background-color: white;" stylesheets="@../icon/bootstrap3.css">
+               <children>
+                  <TableView fx:id="StudentTble" layoutX="14.0" layoutY="76.0" onKeyReleased="#loadFromTable" onMousePressed="#loadFromTable" prefHeight="536.0" prefWidth="748.0">
+                    <columns>
+                      <TableColumn fx:id="StudentID" prefWidth="150.0" text="Student ID" />
+                      <TableColumn fx:id="StudentFirstName" prefWidth="200.0" text="First Name" />
+                        <TableColumn fx:id="StudentLastName" prefWidth="200.0" text="Last Name" />
+                        <TableColumn fx:id="StudentGender" prefWidth="100.0" text="Gender" />
+                        <TableColumn fx:id="StudentClass" prefWidth="100.0" text="Class" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="TeacherTable" layoutX="794.0" layoutY="76.0" prefHeight="536.0" prefWidth="1250.0">
+                     <columns>
+                        <TableColumn fx:id="TeacherFirstName" prefWidth="200.0" text="First Name" />
+                        <TableColumn fx:id="TeacherLastName" prefWidth="200.0" text="Last Name" />
+                        <TableColumn fx:id="Subject" prefWidth="200.0" text="Subject" />
+                        <TableColumn fx:id="TeacherGender" prefWidth="100.0" text="Gender" />
+                        <TableColumn fx:id="TeacherPhoneNumber" prefWidth="200.0" text="Phone Number" />
+                        <TableColumn fx:id="TeacherEmail" prefWidth="400.0" text="Email" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="textfield" disable="true" layoutX="14.0" layoutY="39.0" opacity="0.0" prefHeight="6.0" prefWidth="15.0" />
+                  <Label layoutX="29.0" layoutY="41.0" text="Childern Table">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="809.0" layoutY="41.0" text="Teachers Table">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <HBox layoutY="1.0" prefHeight="30.0" prefWidth="1217.0" style="-fx-background-color: #e8e9ee;">
+         <children>
+            <Label fx:id="topLabel" minWidth="-Infinity" prefHeight="30.0" prefWidth="1147.0" style="-fx-graphic-text-gap: 10;" text="Children Details">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/drag_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Label>
+            <Label fx:id="close" layoutX="25.0" layoutY="10.0" prefHeight="30.0" prefWidth="34.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/minimize%20(1).png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label fx:id="close1" layoutX="435.0" layoutY="10.0" prefHeight="27.0" prefWidth="70.0">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon2/exit_icon.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

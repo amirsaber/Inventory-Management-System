@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anch" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1118.0" style="-fx-background-color: #e8e9ee;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TransfersPackage.TransfersFXMLController">
+   <children>
+      <TitledPane alignment="CENTER_RIGHT" layoutX="10.0" layoutY="56.0" prefHeight="636.0" prefWidth="383.0" text="شاشة ادخال عمليات الصرف للاقسام" underline="true">
+         <content>
+            <ScrollPane prefHeight="640.0" prefWidth="343.0">
+               <content>
+                  <VBox prefHeight="788.0" prefWidth="369.0" spacing="20.0">
+                     <children>
+                        <VBox prefHeight="611.0" prefWidth="329.0" spacing="20.0">
+                           <children>
+                              <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icon2/selling.png" />
+                                 </image>
+                                 <VBox.margin>
+                                    <Insets left="125.0" />
+                                 </VBox.margin>
+                              </ImageView>
+                              <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0" spacing="8.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="32.0" prefWidth="117.0" text="الرقم التسلسلي">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="StudentId" editable="false" labelFloat="true" prefHeight="25.0" prefWidth="277.0" promptText="    الرقم التسلسلي للعملية">
+                                       <font>
+                                          <Font name="Hacen Saudi Arabia" size="13.0" />
+                                       </font></JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0" spacing="15.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="25.0" prefWidth="147.0" text="الصنف">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXComboBox fx:id="ClassComboBox" editable="true" labelFloat="true" prefHeight="27.0" prefWidth="330.0" promptText="من فضلك اختار الصنف المراد اضافته">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXComboBox>
+                                 </children>
+                              </HBox>
+                              <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0" spacing="15.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="26.0" prefWidth="81.0" text="المصدر">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXRadioButton fx:id="MaleRadioButton" text="عهدة النظم">
+                                       <HBox.margin>
+                                          <Insets top="3.0" />
+                                       </HBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="Hacen Saudi Arabia" size="12.0" />
+                                       </font>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="FemaleRadioButton" layoutX="130.0" layoutY="10.0" text="مشتروات">
+                                       <HBox.margin>
+                                          <Insets top="3.0" />
+                                       </HBox.margin>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font name="Hacen Saudi Arabia" size="12.0" />
+                                       </font>
+                                    </JFXRadioButton>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="118.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="25.0" prefWidth="175.0" text="المخزن">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXComboBox fx:id="Adress" prefHeight="27.0" prefWidth="353.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="20.0" layoutY="382.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="26.0" prefWidth="136.0" text="حالة الصنف">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXComboBox fx:id="ClassComboBox11" labelFloat="true" prefHeight="27.0" prefWidth="330.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXComboBox>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="46.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="26.0" prefWidth="103.0" text="الكمية">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="StudentLastName" labelFloat="true" prefHeight="25.0" prefWidth="272.0" promptText="من فضلك دخل الكمية المشتراه للصنف">
+                                       <font>
+                                          <Font name="Hacen Saudi Arabia" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="82.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="26.0" prefWidth="136.0" text="القسم">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXComboBox fx:id="ClassComboBox1" editable="true" labelFloat="true" prefHeight="27.0" prefWidth="330.0">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </JFXComboBox>
+                                 </children>
+                              </HBox>
+                              <HBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0" spacing="3.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="202.0" text="مكتب القسم">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="ParentName" labelFloat="true" prefHeight="28.0" prefWidth="371.0" promptText="من فضلك ادخل معلومات عن مكان الصرف">
+                                       <font>
+                                          <Font name="Hacen Saudi Arabia" size="12.0" />
+                                       </font></JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="25.0" prefWidth="206.0" text="موظف القسم">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="depemp" labelFloat="true" prefHeight="28.0" prefWidth="371.0" promptText="رتبة/اسم موظف القسم">
+                                       <font>
+                                          <Font name="Hacen Saudi Arabia" size="12.0" />
+                                       </font>
+                                    </JFXTextField>
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="20.0" layoutY="495.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="25.0" prefWidth="163.0" text="موظف الفرع">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXComboBox fx:id="employeeCombobox" prefHeight="27.0" prefWidth="344.0" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="226.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36.0" prefWidth="329.0">
+                                 <children>
+                                    <Label alignment="CENTER" minWidth="-Infinity" prefHeight="26.0" prefWidth="85.0" text="التاريخ">
+                                       <font>
+                                          <Font name="Hacen Tunisia Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXDatePicker fx:id="RegisterDate" editable="false" minWidth="-Infinity" prefHeight="35.0" prefWidth="237.0" promptText="من فضلك ادخل تاريخ عملية الصرف">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor></JFXDatePicker>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="64.0" prefWidth="311.0" spacing="40.0" stylesheets="@../icon/dark-theme.css">
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#AddStudent">
+                                 <graphic>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/Add%20User%20Male_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button disable="true" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#UpdateStudent" underline="true">
+                                 <graphic>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/Registration_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="76.0" layoutY="10.0" mnemonicParsing="false" onAction="#DeleteStudent">
+                                 <graphic>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../icon/Delete%20User%20Male_50px.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </content>
+         <font>
+            <Font name="Hacen Vanilla" size="15.0" />
+         </font>
+      </TitledPane>
+      <TitledPane layoutX="398.0" layoutY="105.0" prefHeight="591.0" prefWidth="714.0" text="عمليات الصرف للأقسام">
+        <content>
+            <ScrollPane>
+               <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="2050.0" stylesheets="@../icon/dark-theme.css">
+                     <children>
+                        <TableView fx:id="table" layoutX="30.0" layoutY="103.0" minWidth="-Infinity" onKeyReleased="#LoadFromTable" onMousePressed="#LoadFromTable" prefHeight="624.0" prefWidth="2400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="StudentIDCol" minWidth="-1.0" prefWidth="118.0" style="-fx-alignment: center;" text="الرقم التسلسلي" />
+                            <TableColumn fx:id="FirstNameCol" prefWidth="173.0" style="-fx-alignment: center;" text="الصنف" />
+                              <TableColumn fx:id="LastNameCol" minWidth="8.0" prefWidth="200.0" style="-fx-alignment: center;" text="المصدر" />
+                              <TableColumn fx:id="LastNameCol1" minWidth="8.0" prefWidth="250.0" style="-fx-alignment: center;" text="المخزن" />
+                              <TableColumn fx:id="HobbiesCol1" prefWidth="110.0" style="-fx-alignment: center;" text="حالة الصنف" />
+                              <TableColumn fx:id="GenderCol" minWidth="0.0" prefWidth="74.0" style="-fx-alignment: center;" text="الكميه" />
+                              <TableColumn fx:id="ClassCol" minWidth="0.0" prefWidth="220.0" style="-fx-alignment: center;" text="القسم" />
+                              <TableColumn fx:id="PhoneCol" minWidth="0.0" prefWidth="200.0" style="-fx-alignment: center;" text="مكتب القسم" />
+                              <TableColumn fx:id="EmailCol" minWidth="1.0" prefWidth="250.0" style="-fx-alignment: center;" text="رتبة/اسم موظف القسم" />
+                              <TableColumn fx:id="AddrssCol" prefWidth="200.0" style="-fx-alignment: center;" text="موظف الفرع" />
+                              <TableColumn fx:id="HobbiesCol" prefWidth="110.0" style="-fx-alignment: center;" text="Reg Date" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+        </content>
+         <effect>
+            <SepiaTone level="0.67" />
+         </effect>
+      </TitledPane>
+      <HBox layoutX="411.0" layoutY="21.0" prefHeight="32.0" prefWidth="693.0" spacing="30.0">
+         <children>
+            <JFXTextField fx:id="SearchTectField" alignment="CENTER_RIGHT" labelFloat="true" onKeyReleased="#SearchStudent" prefHeight="25.0" prefWidth="141.0" promptText="كلمة البحث" />
+            <JFXComboBox fx:id="SearchComboBox" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="136.0" promptText="تقنية البحث">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXComboBox>
+            <HBox spacing="10.0" stylesheets="@../icon/bootstrap3.css">
+               <children>
+                  <DatePicker fx:id="todatepicker" editable="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#LoadTableeeaaa" promptText="تاريخ النهاية" />
+                  <DatePicker fx:id="fromdatepicker" editable="false" nodeOrientation="RIGHT_TO_LEFT" prefWidth="209.0" promptText="تاريخ البداية" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="434.0" layoutY="62.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="22.0" prefWidth="652.0" spacing="30.0" style="-fx-background-color: white;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="عدد نتائج البحث" wrappingWidth="145.06350708007812">
+               <font>
+                  <Font name="Hacen Tehran" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="CountTotal" layoutX="129.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="113.65700006484985">
+               <font>
+                  <Font name="Hacen Tehran" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="كمية العمليات المنقضيه">
+               <font>
+                  <Font name="Hacen Tehran" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="SumTotal" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="105.65699863433838">
+               <font>
+                  <Font name="Hacen Tehran" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <JFXButton layoutX="135.0" onAction="#loadaa" stylesheets="@../icon/dark-theme%20-%20Copy.css" text="تحميل كل العمليات" />
+   </children>
+</AnchorPane>
